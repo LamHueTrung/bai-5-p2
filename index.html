@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/reponsive.css">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.15.4-web/css/all.min.css">
+    <title>Tự học Lập Trình Cùng LHT</title>
+    <link rel="icon" href="http://abctech.vn/wp-content/uploads/2017/06/logo-nen-xanh.jpg" type="image/x-icon" />
+
+</head>
+<body>
+    <header class="header">
+        <ul class="header_list">
+            <li class="header_items header-menu">
+                    <i class="menu-mobile fas fa-bars"></i>
+            </li>
+            <ul class="header_list-mobile">
+
+                <li class="header_items">
+                    <a href="https://lamhuetrung.github.io/index.html">
+                        <i class="fas fa-home"></i>
+                        <span></span>
+                    </a>
+                </li>
+               
+                <li class="header_items">
+                    <a href="#bai-tap">
+                        <i class="fas fa-book"></i>
+                        <span></span>
+                    </a>
+                </li>
+                <li class="header_items">
+                    <a href="https://www.facebook.com/T%E1%BB%B1-h%E1%BB%8Dc-l%E1%BA%ADp-Tr%C3%ACnh-c%C3%B9ng-LHT-110968584718753">
+                        <i class="fas fa-question"></i>
+                        <span></span>
+                    </a>
+                </li>
+            </ul>
+        </ul>
+    </header>
+    <div class="container">
+        <div class="gird__column-2">
+            <div class="content_LT">
+                <div class="content__BT">
+                    <h1 class="BT__tieu-de">Project</h1>
+                    <span class="BT__noi-dung">Bạn hãy viết chương trình hiển thị ra màn hình các số từ 1 tới 5 sử dụng vòng lặp do-while.</span>
+                    <h1 class="BT__tieu-de">Lý Thuyết</h1>
+                    <span class="BT__noi-dung">Ở các Phần 1 bạn đã được giới thiệu về vòng lặp while, bài này bạn sẽ biết thêm về cách sử dụng vòng lặp do-while.</span>
+                    <span class="BT__noi-dung">Bài này các bạn có thể làm bằng vòng lặp for và While nhưng ở đây tui sẽ hướng dẫn các bạn giải quyết bằng vòng lặp do-while.</span>
+                    <span class="BT__noi-dung--TD">Cấu trúc vòng lặp do-while:</span>
+                    <pre class="BT__output-1">
+                        <code class="BT__output">
+do {
+	// Khối lệnh
+} while (biểu_thức);
+                    </code>
+                    </pre>
+                    <span class="BT__noi-dung">Khác với for, While là kiểm tra điều kiện nếu đúng thì mới thực hiện khối code; Vòng lặp do-while sẽ thực hiện khối code xong rồi mới kiểm tra điều kiện, nếu điều kiện đúng thì tiếp tục thực hiện khối code.</span>
+                    <span class="BT__noi-dung">Hay nói 1 cách đơn giản hơn thì do-While sẽ thực hiện khối code ít nhất 1 lần dù điều kiện sai; Còn for và while thì chỉ thực hiện khối lệnh khi điều kiện đúng. </span>
+                    <span class="BT__noi-dung--TD">Để hiểu hơn về do-while các bạn hãy xem qua các ví dụ dưới đây:. </span>
+                    <span class="BT__noi-dung">Ví dụ 1:</span>
+                    <pre class="BT__output">
+                        <code class="BT__output">
+1 #include < stdio.h >
+2
+3 int main() {
+4 	int i = 1;
+5	do {
+6		printf("do-while");
+7	} while (i < 1);
+8
+9	while (i < 1) {
+10		printf("while");
+11	}
+12	return 0;
+13 }
+                        </code>
+                    </pre>
+                    <span class="BT__noi-dung">Kết quả khi chạy chương trình:</1></span>
+                    <pre class="BT__output">
+                        <code class="BT__output">
+do-while
+                        </code>
+                    </pre>
+                    <span class="BT__noi-dung">Như các bạn đã thấy, đối với vòng lặp do-while(từ dòng 5 tới dòng 7) mặc dù khi kiểm tra điều kiện i = 1 < 1 => nhưng kết quả vẫn in ra do-while; Còn vòng lặp while thì không in ra khi điều kiện sai.</1></span>
+                    <span class="BT__noi-dung">Giải thích hiện tượng trên là, do từ khóa "do" + "khối lệnh" nằm trước điều kiện nên khi chạy chương trình thì nó thực hiện từ trên xuống thế nên nó sẽ thực hiện khối lệnh trong do rồi mới đến điều kiện; Chính vì thế mới có tính chất "in ra ít nhất 1 lần".</1></span>
+                    <span class="BT__noi-dung">Một điểm cần lưu ý ở do-while nữa là do-while kết thúc bằng dấu ";" (dòng số 7). Đây cũng là 1 điểm khác của do-while so với for và while nhé.</span>
+                    <span class="BT__noi-dung">Đọc tới đây chắc các bạn cũng đã nắm được điểm khác giữa do-while với for và while rồi nhỉ, các bạn có thể xem video và làm các bài tập điểm hiểu hơn nhé.</span>
+                    
+                </div>
+            </div>
+            <div class="content__HD">
+                <h1>Vòng lặp While / Do-While </h1>
+                <h1 class="content__HD--item">phần 2: Cấu trúc và các thức hoạt động của vòng lặp do-While</h1>
+                <video class="video" controls>
+                    <source src="./assets/video/video.webm" type="video/mp4">
+                </video>
+                <a class="btn-next">Bài tiếp theo</a>
+                <div class="container__note">
+                    <h2>Nhắc nhở: có các bài tập nhé.</h2>
+                </div>
+                <div class="container__learn" id="bai-tap">  
+                    <span  class="learn__heading">BÀI TẬP</span>
+                    <div class="learn__content" id="bai-tap">
+                        <div class="learn__ex">
+                            <a class="learn__slide-1 bai-tap">Bài tập 1</a>
+                            <span class="noidung-baitap">
+                                <pre class="BT__output">
+                                    <code class="BT__output">
+Bạn hãy viết chương trình hiển thị ra màn hình 
+các số có số 0 ở cuối từ 1 tới 1000
+(màn hình sẽ hiển thị lên các số 10, 20, 30, ..., 990, 1000).
+Gợi ý:
+    +Nếu 1 số chia hết cho 10
+    thì chữ số cuối cùng của số đó luôn là số 0,
+    nên bài này thực ra là in ra những số chia hết cho 10 từ 1 tới 100.
+                                    </code>
+                                </pre>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+</body>
+</html>
